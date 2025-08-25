@@ -14,7 +14,7 @@ sepal_width = st.number_input('Sepal width',placeholder='Enter a valid number b/
 df_user_input = pd.DataFrame([[sepal_length,sepal_width,petal_length,petal_width]],columns =['sepal_length','sepal_width','petal_length','petal_width'])
 st.write(df_user_input)
 
-model_path = path.join('Model','iris_classifier.pkl')
+model_path = path.join('model','iris_classifier.pkl')
 with open(model_path, 'rb') as file:
     iris_predictor = pickle.load(file)
 
